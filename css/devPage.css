@@ -10,6 +10,7 @@ header {
     flex-direction: column;
 }
 
+
 .socials {
     display: flex;
     justify-content: flex-end;
@@ -22,6 +23,24 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+
+.navLinks {
+    display: flex;
+    align-content:flex-start
+    
+}
+
+.navLink {
+    text-decoration: none;
+    margin-left: 1vw;
+    font-size: 1em;
+}
+
+button.navLink {
+    border: none;
 }
 
 .ryalto-logo {
@@ -31,7 +50,6 @@ nav {
 
 a {
     text-decoration: none;
-    font-size: 1em;
 }
 
 .logo {
@@ -48,16 +66,6 @@ a {
     font-size: 1.8em;
 }
 
-.navLinks {
-    display: flex;
-    align-content:flex-start
-}
-
-.navLink {
-
-    padding-left: 1vw;
-    font-size: 1em;
-}
 
 .darkModeToggle {
     width: 1em;
@@ -80,7 +88,9 @@ main {
     margin: 3vh 1vw;
 }
 .main-view {
+    min-width: 375px;
     display: flex;
+    align-items: center;
     gap: 3%;
     padding: 0 5%;
 
@@ -88,21 +98,24 @@ main {
 
 .newestPost h3 {
     font-weight: 600;
-    margin-bottom: 2vh;
 }
 
-.newestPost {
+div.newestPost {
     display: flex;
     position: relative;
-    max-width: 50vw;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     cursor: pointer;
+    border-radius: 0.4vw;
 }
 
 .newestPost img {
-    max-width: 50vw;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
     height: auto;
-    border-radius: 0.4vw;
+
 }
 
 .text-container {
@@ -129,25 +142,29 @@ main {
    }
 
 
-.popularPosts {
-    /* display: flex;
-    justify-content: space-between; */
-}
-
 div.sidePanel {
     display: flex;
     justify-content: space-between;
+    margin-top: 10%;
+    padding-bottom: 8%;
+    border-bottom: solid 1px #FFC306;
+}
+
+div.sidePanel h4 {
+    font-weight: 500;
 }
 
 div.sidePanelContent {
-    /* gap:20px ;
-    display: inline-grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2; */
+    max-width: 600px;
+    gap:20px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 div.sidePanelContent h6 {
     text-transform: uppercase;
+    font-size: 16px;
     font-weight: 100;
 }
 .cardPost {
@@ -157,8 +174,7 @@ div.sidePanelContent h6 {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 5px 3px 30px;
     padding: 18px 20px;
-    width: 16vw;
-    height: 15vh;
+
 }
 
 .bottom-scroll {
@@ -175,10 +191,9 @@ div.sidePanelContent h6 {
 
 @media screen and (max-width: 840px){
 
-    /* * {
-        font-size: 80%;
-        
-    } */
+button.navLink {
+    border: none;
+}
     nav {
         flex-direction: column;
         gap: 5px;
@@ -203,8 +218,19 @@ div.sidePanelContent h6 {
 
     }
 
+    .main-top{
+        justify-content: center;
+
+    }
+
+    .main-view { 
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .newestPost img {
         min-width: 330px;
+        width: 100%;
         height: auto;
     }
 
@@ -212,11 +238,14 @@ div.sidePanelContent h6 {
         min-width: 330px;
         font-size: 70%;
     }
-    .main-top{
-        justify-content: center;
+    
+    .sidePanel {
+
+        max-width: 330px;
     }
-    .main-view { 
-        flex-direction: column;
+    .sidePanelContent {
+       grid-column: auto;
+
     }
 
     .bottom-scroll .cardPost {
