@@ -18,19 +18,29 @@ header {
     gap: 1%;
 }
 
+i {
+    color: #2799f0;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    color: #FFC306;
+}
+
 nav {
     padding: 3vh 4vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: black;
 }
 
 
 .navLinks {
     display: flex;
-    align-content:flex-start
-    
+    align-content:flex-start;
+    color: #111210;
 }
 
 .navLink {
@@ -38,6 +48,16 @@ nav {
     margin-left: 1vw;
     font-size: 1em;
     cursor: pointer;
+    color: #111210;
+    transition: all .3s;
+}
+
+.navLink:hover {
+    color: #2799f0;
+}
+
+.viewAll:hover {
+    color: #2799f0;
 }
 
 button.navLink {
@@ -53,7 +73,8 @@ button.navLink {
 
 .logo a {
     font-size: 25px;
-
+    color: #111210;
+   
 }
 
 
@@ -106,6 +127,10 @@ main {
     padding: 0 5%;
 
 }
+ .viewAll {
+    font-size: 12px;
+    color: #111210;
+ }
 
 .newestPost h3 {
     font-weight: 600;
@@ -178,7 +203,7 @@ div.sidePanelContent {
     gap:20px ;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
 div.sidePanelContent h6 {
@@ -193,6 +218,7 @@ div.sidePanelContent h6 {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 5px 3px 30px;
     padding: 18px 20px;
+    cursor:pointer;
 
 }
 
@@ -251,7 +277,7 @@ button.navLink {
         flex-direction: column;
         top: 10%;
         right: 0.2%;
-        gap: 2%;
+        padding-top: 8%;
         position: absolute;
 
     }
