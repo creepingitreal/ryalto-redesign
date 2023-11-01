@@ -10,10 +10,10 @@ header {
     flex-direction: column;
 }
 
-
 .socials {
     display: flex;
     justify-content: flex-end;
+    margin-top: 3%;
     padding-right: 5%;
     gap: 1%;
 }
@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 
@@ -37,14 +37,28 @@ nav {
     text-decoration: none;
     margin-left: 1vw;
     font-size: 1em;
+    cursor: pointer;
 }
 
 button.navLink {
     border: none;
 }
 
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}
+
+.logo a {
+    font-size: 25px;
+
+}
+
+
 .ryalto-logo {
-    height: 40px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -52,14 +66,11 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    display: flex;
-    align-content: flex-end;
-    gap: .5vw;
-}
 
 .main-top{
     display: flex;
+    align-items: center;
+
 
 }
 .pageTitle{
@@ -141,13 +152,21 @@ div.newestPost {
     font-weight: 200;
    }
 
+.popularPost {
+    min-width: 330px;
+    display: flex;
+
+
+}
 
 div.sidePanel {
     display: flex;
     justify-content: space-between;
-    margin-top: 10%;
-    padding-bottom: 8%;
+    width: 100%;
+    margin-bottom: 8%;
+    padding-bottom: 4%;
     border-bottom: solid 1px #FFC306;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 div.sidePanel h4 {
@@ -177,16 +196,39 @@ div.sidePanelContent h6 {
 
 }
 
-.bottom-scroll {
+section {
+    padding: 2% 10%;
+}
+
+div.bottom-scroll {
     padding: 2% 10%;
     display: flex;
-    max-width: 85%;
-    white-space: no;
     overflow-y: hidden;
     overflow-x: auto;
 }
-.bottom-scroll .cardPost {
+
+div.bottom-scroll a {
+    font-size: 14px;
+}
+
+div.cardPost {
     min-width: 200px;
+    max-width: 150px;
+    gap: 5px
+    ;
+}
+
+.bottomScrollHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomScrollHeading h4 {
+    font-weight: 300;
+}
+
+.bottom-scroll h6 {
+    font-weight: 400;
 }
 
 @media screen and (max-width: 840px){
@@ -197,6 +239,7 @@ button.navLink {
     nav {
         flex-direction: column;
         gap: 5px;
+        margin-bottom: 15px;
     }
 
     .logo {
@@ -225,7 +268,8 @@ button.navLink {
 
     .main-view { 
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+    
     }
 
     .newestPost img {
@@ -238,11 +282,19 @@ button.navLink {
         min-width: 330px;
         font-size: 70%;
     }
+
+    .popularPost {
+        min-width: 330px;
+        display: flex;
+    }        
     
     .sidePanel {
-
-        max-width: 330px;
+        margin-top: 20px;
+        
+        /* margin-bottom: 0;
+        padding-bottom: 3%; */
     }
+
     .sidePanelContent {
        grid-column: auto;
 
