@@ -111,7 +111,7 @@ a {
 .ribbon {
     height: 100%;
     width: auto;
-    background-image: url('/images/DesktopRibbon.png');
+    background-image: url('./images/DesktopRibbon.png');
     background-repeat: no-repeat;
     
 }
@@ -242,14 +242,13 @@ div.sidePanelContent h6 {
     min-height: 140px;
 }
 
-p.cardPost {
-    width: auto;
-}
-
 section {
     padding: 2% 10%;
 }
 
+.cardPost.slider {
+    width: 250px;
+}
 div.bottom-scroll {
     padding: 2% 0;
     gap: 3%;
@@ -296,7 +295,7 @@ button.navLink {
     nav {
         flex-direction: column;
         gap: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .logo {
@@ -306,17 +305,24 @@ button.navLink {
 
     .socials {
         flex-direction: column;
-        top: 10%;
+        top: 11%;
         right: 0.2%;
         padding-top: 8%;
         position: absolute;
 
     }
+
+    i{
+        padding-bottom: 2vh;
+    }
+    .intro{
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
     .intro h2 {
         font-size: x-large;
         font-weight: 600;
-        margin-bottom: 7px;
-
     }
 
     .main-top{
