@@ -111,8 +111,9 @@ a {
 .ribbon {
     height: 100%;
     width: auto;
-    background-image: url('./images/DesktopRibbon.png');
+    background-image: url('../images/DesktopRibbon.png');
     background-repeat: no-repeat;
+    padding: 0;
 }
 
 .intro {
@@ -315,13 +316,13 @@ button.navLink {
         padding-bottom: 2vh;
     }
     .intro{
-        margin: 0 0 20px 0;
+        font-size: 18px;
+        margin: 3% 0 20px 0;
         padding: 0;
     }
 
     .intro h2 {
-        font-size: x-large;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .main-top{
@@ -332,8 +333,6 @@ button.navLink {
     .ribbon {
         height: auto;
         width: 375p;
-        background-image: url('./images/DesktopRibbon.png');
-        background-repeat: no-repeat;
     }
 
     .main-view { 
@@ -350,7 +349,7 @@ button.navLink {
 
     .text-container {
         min-width: 330px;
-        font-size: 70%;
+        
     }
 
     .popularPost {
