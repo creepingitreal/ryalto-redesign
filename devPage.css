@@ -113,7 +113,6 @@ a {
     width: auto;
     background-image: url('./images/DesktopRibbon.png');
     background-repeat: no-repeat;
-    
 }
 
 .intro {
@@ -328,6 +327,13 @@ button.navLink {
     .main-top{
         justify-content: center;
 
+    }
+
+    .ribbon {
+        height: auto;
+        width: 375p;
+        background-image: url('./images/DesktopRibbon.png');
+        background-repeat: no-repeat;
     }
 
     .main-view { 
