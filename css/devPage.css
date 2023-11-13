@@ -13,8 +13,7 @@ header {
 .socials {
     display: flex;
     justify-content: flex-end;
-    padding: 3%;
-    padding-right: 5%;
+    padding: 3% 5% 0 0;
     gap: 1%;
 }
 
@@ -66,7 +65,9 @@ button.navLink {
     border: none;
 }
 
-
+.pageTitle:hover {
+    font-weight: 300;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -233,7 +234,7 @@ div.sidePanelContent h6 {
     gap: 1vh;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 5px 3px 30px;
-    padding: 18px 20px;
+    padding: 18px 50px;
     cursor:pointer;
 
 }
@@ -274,6 +275,8 @@ div.cardPost {
     font-weight: 400;
 }
 footer {
+    padding-bottom: 3vw;
+    padding-left: 3vh;
     display: flex;
     align-items: flex-start;
 }
