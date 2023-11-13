@@ -18,12 +18,14 @@ header {
 }
 
 i {
+    font-size: 20px;
     color: #2799f0;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
 i:hover {
+    font-size: 23px;
     color: #FFC306;
 }
 
@@ -159,7 +161,11 @@ div.newestPost {
     border: none;
     border-radius: 1vw;
 }
-
+div.newestPost:hover, div.newestPost img:hover {
+    width: 120%;
+    height: 120%;
+    box-shadow: rgba(17, 17, 26, 0.2) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
 .newestPost img {
     text-align: left;
     width: 100%;
@@ -238,8 +244,16 @@ div.sidePanelContent h6 {
     padding: 18px 35px;
     cursor:pointer;
     min-width: 100px;
+    min-height: 165px;
     max-width: 250px;
-    min-height: 140px;
+    transition: .2s ease-in-out;
+}
+
+.cardPost:hover {
+    font-size: 110%; 
+    width: 110%;
+    height: 110%;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 3px 30px;
 }
 
 section {
@@ -348,6 +362,7 @@ button.navLink {
     }
 
     .text-container {
+        font-size: 70%;
         min-width: 330px;
         
     }
