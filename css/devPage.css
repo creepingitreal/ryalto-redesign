@@ -234,9 +234,15 @@ div.sidePanelContent h6 {
     gap: 1vh;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 5px 3px 30px;
-    padding: 18px 50px;
+    padding: 18px 35px;
     cursor:pointer;
+    min-width: 100px;
+    max-width: 250px;
+    min-height: 140px;
+}
 
+p.cardPost {
+    width: auto;
 }
 
 section {
@@ -255,12 +261,12 @@ div.bottom-scroll a {
     font-size: 14px;
 }
 
-div.cardPost {
-    min-width: 200px;
-    max-width: 150px;
+/* div.cardPost {
+    min-width: 100px;
+    max-width: 250px;
     gap: 5px
     ;
-}
+} */
 
 .bottomScrollHeading {
     display: flex;
