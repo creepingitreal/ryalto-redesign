@@ -20,6 +20,7 @@ header {
 i {
     color: #2799f0;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 i:hover {
